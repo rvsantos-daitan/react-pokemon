@@ -1,17 +1,15 @@
-import React from "react";
 import "./App.css";
-import Dashboard from "./components/dashboard";
-import Sidebar from "./components/sidebar";
 import { Provider } from "react-redux";
-import store from "./store";
+import { store } from "./store";
+import Main from "./pages/main";
+
 function App() {
+
+
   return (
-    <div>
-      <Provider store={store}>
-        <Dashboard />
-        <Sidebar />
-      </Provider>
-    </div>
+    <Provider store={store}>
+      <Main />
+    </Provider>
   );
 }
 
