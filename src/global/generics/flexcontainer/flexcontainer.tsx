@@ -6,8 +6,15 @@ export const FlexContainer = styled.div`
     justify-content: space-evenly;
 `;
 
-export const FlexColumnContainer = styled.div`
-    width: 100%;
+interface IFlexColumnContainerProps {
+    width: number
+}
+
+export const FlexColumnContainer = styled.div<IFlexColumnContainerProps>`
+    ${({ width }): string => {
+        if (width) return `width: ${width}%;`
+        return "width: 100%;"
+    }}
     display: flex;
     flex-direction:  column;
     justify-content: space-evenly;

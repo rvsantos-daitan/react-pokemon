@@ -14,7 +14,7 @@ const Card: React.FC<ICardProps> = ({ pokemon, action }) => {
         <CardContainer>
             <FlexContainer>
                 <Sprite src={pokemon.sprites.front_default} alt="Pokemon" />
-                <FlexColumnContainer>
+                <FlexColumnContainer width={80}>
                     <CardHeader>{pokemon.name}</CardHeader>
                     <BadgeContainer>
                         {pokemon.types.map(({ type }) => <Badge typename={type.name}>{type.name}</Badge>)}

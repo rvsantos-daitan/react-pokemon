@@ -1,3 +1,4 @@
+import IFilter from "../interfaces/filter.model";
 import IGenericInterface from "../interfaces/generic.model";
 
 const initialState = {
@@ -11,6 +12,12 @@ const initialState = {
 
 const initialFavoriteState = {
   favoritePokemon: []
+}
+
+const initialFilterState: IFilter = {
+  types: [],
+  minWeight: 0,
+  maxWeight: 0
 }
 
 export const favoriteReducer = (state = initialFavoriteState, action) => {
@@ -38,6 +45,29 @@ export const dataReducer = (state = initialState, action) => {
   if (action.type === "pokemon/fetchTypes") {
     const { types } = action;
     return { ...state, types: [...types] };
+  }
+
+  return state;
+}
+
+export const filterReducer = (state = initialFilterState, action) => {
+  if (action.type === "filter/addfilter") {
+    if (action.filters.types?.length > 0) {
+      return { ...state, types: [...state.types, ...action.filters.types] }
+    }
+    return { ...state, ...action.filters }
+  }
+
+  if (action.type === "filter/removefilter") {
+    const { filterName, filterValue } = action;
+    const newStateValue = state[filterName].filter((value: string) => value !== filterValue);
+    const newState = { ...state }
+    newState[filterName] = newStateValue;
+    return newState;
+  }
+
+  if (action.type === "filter/clearFilter") {
+    return { ...initialFilterState }
   }
 
   return state;

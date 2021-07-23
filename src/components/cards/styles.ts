@@ -21,7 +21,7 @@ export const CardContainer = styled.div`
 
 export const Sprite = styled.img`
   width: 10rem;
-  margin: 1rem auto .3rem;
+  margin: 1rem auto .3rem 1rem;
 `;
 
 export const CardHeader = styled.h1`
