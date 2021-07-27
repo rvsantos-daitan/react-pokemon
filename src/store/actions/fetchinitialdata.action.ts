@@ -56,7 +56,7 @@ const unitFetch = (url: string) =>
             const data = await response.json();
             const { id, sprites, name, abilities, types, forms, weight } = data;
 
-            dispatch(fetchUnitData({ id, sprites, name, abilities, types, forms, weight }));
+            dispatch(fetchUnitData({ id, sprites, name, abilities, types, forms, weight, isFavorite: false }));
         } catch (err) {
             console.log("fetch unitario", err)
         }

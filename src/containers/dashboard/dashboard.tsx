@@ -14,19 +14,23 @@ interface IDashBoard {
 const Dashboard: React.FC<IDashBoard> = ({ pokemonList }) => {
   const dispatch = useDispatch();
 
-  const handleClick = (pokemonName: string) => {
-    dispatch(toggleFavoritePokemon(pokemonName))
+  const handleClick = (pokemon: IPokemonFragment) => {
+    dispatch(toggleFavoritePokemon(pokemon))
   };
+
+  const cardProperties = {
+    displayButton: true,
+    display: 'flex'
+  }
 
   return (
     <Container>
       <WideSidebar>
         {pokemonList.map((pokemon: IPokemonFragment) => (
-          <Card key={pokemon.id} pokemon={pokemon} action={handleClick} />
+          <Card key={pokemon.name} pokemon={pokemon} action={handleClick} {...cardProperties}/>
         ))}
       </WideSidebar>
     </Container>
-
   );
 }
 

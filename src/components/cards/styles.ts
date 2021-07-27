@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 
-export const CardContainer = styled.div`
-  width: 100%;
+interface ICardContainerProps {
+  width?: string
+}
+
+export const CardContainer = styled.div<ICardContainerProps>`
+  ${(props : ICardContainerProps): string => {
+    if(!props.width) props.width = "100%";    
+    return `width: ${props.width};`
+  }}
   height: fit-content;
 
   border-radius: 15px;
@@ -25,10 +32,10 @@ export const Sprite = styled.img`
 `;
 
 export const CardHeader = styled.h1`
-font-size: 1.5rem;
-font-family: sans-serif;
+  font-size: 1.5rem;
+  font-family: sans-serif;
 
-margin: .5rem 0;
+  margin: .5rem 0;
 `;
 
 export const BadgeContainer = styled.div`
@@ -78,10 +85,24 @@ export const Badge = styled.h6<ITypeBadge>`
     width: 40%;
 `;
 
+interface IButtonProps {
+  state?: IGenericProperties,
+}
 
-export const Button = styled.button`
+interface IGenericProperties {
+  backgroundColor?: string
+}
+
+export const Button = styled.button<IButtonProps>`
+    ${({state}):string => {
+      const colors = {
+        'PokemonYellow': ' #FFCB05',
+        'White': 'transparent'
+      };
+
+      return `background-color: ${colors[state.backgroundColor]};`
+    }}
     margin: .2rem auto .7rem;
-    background-color: transparent;
     font-size: 1rem;
     border-radius: 15px;
     cursor: pointer;

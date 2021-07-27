@@ -9,6 +9,7 @@ export interface IPokemonFragment {
   types: Array<IPoketypes>;
   sprites: ISprite;
   weight: number;
+  isFavorite: boolean
 }
 
 export interface IPokemon {

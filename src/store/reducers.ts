@@ -1,7 +1,18 @@
 import IFilter from "../interfaces/filter.model";
-import IGenericInterface from "../interfaces/generic.model";
+import { IPokemon, IPokemonFragment, IType } from "../interfaces/pokemon.model";
 
-const initialState = {
+/*
+interface IState {
+  results: IPokemon[],
+  offset: number,
+  limit: number,
+  pokemonList: IPokemonFragment[],
+  types: IType[],
+  hasFetchedData: boolean
+}
+*/
+
+const initialState= {
   results: [],
   offset: 0,
   limit: 20,
@@ -10,9 +21,6 @@ const initialState = {
   hasFetchedData: false
 };
 
-const initialFavoriteState = {
-  favoritePokemon: []
-}
 
 const initialFilterState: IFilter = {
   types: [],
@@ -20,21 +28,6 @@ const initialFilterState: IFilter = {
   maxWeight: 0
 }
 
-export const favoriteReducer = (state = initialFavoriteState, action) => {
-  if (action.type === "pokemon/favoritePokemon") {
-    const { favoritePokemon } = state;
-    const { pokemonName } = action;
-
-    let updatedList: Array<IGenericInterface>;
-    if (favoritePokemon.includes(pokemonName)) {
-      updatedList = favoritePokemon.filter(pokemon => pokemon !== pokemonName);
-    } else {
-      updatedList = [...favoritePokemon, pokemonName];
-    }
-    return { ...state, favoritePokemon: updatedList }
-  }
-  return state;
-}
 
 export const dataReducer = (state = initialState, action) => {
   if (action.type === "pokemon/fetchUnitData") {
@@ -47,6 +40,17 @@ export const dataReducer = (state = initialState, action) => {
     return { ...state, types: [...types] };
   }
 
+  if (action.type === "pokemon/toggleFavorite") {
+    const { pokemonList } = state;
+
+    return {
+      ...state,
+      pokemonList: pokemonList
+      .map(pokemon => pokemon.id === action.pokemon.id ? 
+        { ...pokemon, isFavorite: !action.pokemon.isFavorite} 
+        : pokemon)
+      }
+  }
   return state;
 }
 

@@ -3,3 +3,7 @@ export default interface IFilter {
     minWeight?: number,
     maxWeight?: number
 }
+
+export interface IFilterGenericProps {
+    setFilters: (parameters: any) => void
+}

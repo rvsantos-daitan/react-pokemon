@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 
-interface IInputeProps {
+interface IInputProps {
     name: string,
+    isChecked?: boolean,
     type?: string,
 }
 
@@ -38,7 +39,7 @@ export const Searchbar = styled.input`
 `;
 
 
-export const SmallInput = styled.input.attrs<IInputeProps>((props) => ({ ...props }))`
+export const SmallInput = styled.input.attrs<IInputProps>((props) => ({ ...props }))`
     width: 60px;
     height: 30px;
 
@@ -51,9 +52,9 @@ export const SimpleFlexContainer = styled.div`
     justify-content: space-between;
 `;
 
-export const Checkbox = styled.input.attrs<IInputeProps>((props) => ({ ...props }))`
+export const Checkbox = styled.input.attrs<IInputProps>((props) => ({ ...props }))`
     margin-right: .4rem;
-    height: 100%;
+    height: 13px;
 `;
 
 export const FiltersContainer = styled.div`

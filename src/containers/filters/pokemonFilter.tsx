@@ -1,6 +1,9 @@
-import { StandardList } from "../../global/generics/list/list";
+import { StandardList, ListItem } from "../../global/generics/list/list";
 import { FiltersContainer, Label, FlexLabel, FilterLabel, Searchbar, SimpleFlexContainer, SmallInput, Checkbox } from "../../global/generics/atoms/styles";
 import filterFunctionFactory from '../../global/functions/filterfunctions.factory';
+import { IType } from "../../interfaces/pokemon.model";
+import WeightFilter from "../../components/filters/weightfilter";
+import SearchBar from "../../components/filters/searchbar";
 
 const PokemonFilter = (props) => {
 
@@ -21,38 +24,27 @@ const PokemonFilter = (props) => {
 
     return (
         <>
-            <FiltersContainer>
-                <FilterLabel> Searchbox:
-                    <Searchbar />
-                </FilterLabel>
-            </FiltersContainer >
-            <FiltersContainer>
-                <FilterLabel> Weight:
-                    <SimpleFlexContainer>
-                        <Label>Min
-                            <SmallInput onChange={setFilters} {...{ type: 'number', name: 'minWeight' }} />
-                        </Label>
-                        <Label>Max
-                            <SmallInput onChange={setFilters} {...{ type: 'number', name: 'maxWeight' }} />
-                        </Label>
-                    </SimpleFlexContainer>
-                </FilterLabel>
-            </FiltersContainer>
+            <SearchBar/>
+            <WeightFilter {...{setFilters}}/>
             <FiltersContainer>
                 <FilterLabel> Type:
                     <SimpleFlexContainer>
                         <StandardList>
-                            {props.typesList.map((type, position) => (position % 2 === 0 ?
-                                <FlexLabel>
+                            {props.typesList.map((type: IType, position: number) => (position % 2 === 0 ?
+                               <ListItem key={position}> 
+                                   <FlexLabel htmlFor={type.name}>
                                     <Checkbox onClick={setFilters} {...{ type: 'checkbox', name: `${type.name}` }} /> {type.name}
-                                </FlexLabel>
+                                 </FlexLabel>
+                                </ListItem>
                                 : null))}
                         </StandardList>
                         <StandardList>
-                            {props.typesList.map((type, position) => (position % 2 !== 0 ?
-                                <FlexLabel>
+                            {props.typesList.map((type: IType, position: number) => (position % 2 !== 0 ?
+                            <ListItem key={position}>
+                                <FlexLabel htmlFor={type.name}>
                                     <Checkbox onClick={setFilters} {...{ type: 'checkbox', name: `${type.name}` }} /> {type.name}
                                 </FlexLabel>
+                                </ListItem>
                                 : null))}
                         </StandardList>
                     </SimpleFlexContainer>
