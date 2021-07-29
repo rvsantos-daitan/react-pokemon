@@ -29,25 +29,28 @@ const fetchPokemonTypeData = async () => {
     return results;
 }
 
-export const fetchInital = () =>
+export const setInitialPokemonData = () =>
     async (dispatch, getState) => {
         const hasFetchedData = getState().initialData.hasFetchedData;
         if (hasFetchedData) return;
         try {
             const pokemon = await fetchPokemonData();
-            const types = await fetchPokemonTypeData();
 
             pokemon.forEach((result) => {
                 dispatch(unitFetch(result.url))
             });
 
-            dispatch(fetchTypesData(types));
         } catch (err) {
             console.log(process.env.REACT_APP_BASE_URL)
             console.log("fetch inicial", err)
         }
     }
 
+export const setInitialTypesData = () => 
+    async (dispatch) => {
+        const types = await fetchPokemonTypeData();
+        dispatch(fetchTypesData(types));
+    }
 
 const unitFetch = (url: string) =>
     async (dispatch) => {

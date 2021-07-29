@@ -1,19 +1,29 @@
-import { StandardList, ListItem } from "../../global/generics/list/list";
-import { FiltersContainer, Label, FlexLabel, FilterLabel, Searchbar, SimpleFlexContainer, SmallInput, Checkbox } from "../../global/generics/atoms/styles";
 import filterFunctionFactory from '../../global/functions/filterfunctions.factory';
-import { IType } from "../../interfaces/pokemon.model";
 import WeightFilter from "../../components/filters/weightfilter";
 import SearchBar from "../../components/filters/searchbar";
+import TypesFilters from "../../components/filters/typesfilter";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { StoreState } from '../../store';
+import { IType } from '../../interfaces/pokemon.model';
+import { filterPokemon, removeFilter } from '../../store/actions/filter.action';
+import { setInitialTypesData } from '../../store/actions/fetchinitialdata.action';
 
-const PokemonFilter = (props) => {
+const PokemonFilter: React.FC = () => {
+    const dispatch = useDispatch();
+    
+    useEffect(() => {
+        dispatch(setInitialTypesData());
+    }, [])
 
-    const execFilter = (inputType: string, ...values) => {
-        const { functions } = props;
+    const pokemonTypes = useSelector<StoreState, IType[]>(state => (state.initialData.types));
+
+    const execFilter = (inputType: string, ...values) => {        
         if (inputType === 'checkbox') {
-            return functions.handleTypesFilter(values[0], values[1]);
+            return handleTypesFilter(values[0], values[1]);
         }
 
-        return functions.handleSetRangeValue(values[0], values[1]);
+        return handleSetRangeValue(values[0], values[1]);
     }
 
     const setFilters = (event) => {
@@ -22,34 +32,23 @@ const PokemonFilter = (props) => {
         filter[target.type](target);
     }
 
+    const handleTypesFilter = (isTypeChecked: boolean, markedType: string) => {
+        isTypeChecked ? dispatch(filterPokemon({ types: [markedType] })) : dispatch(removeFilter('types', markedType))
+    }
+
+    const handleSetRangeValue = (inputName: string, weight: number) => {
+        if (inputName.search('max') === 0) {
+            dispatch(filterPokemon({ maxWeight: weight }))
+        } else if (inputName.search('min') === 0) {
+            dispatch(filterPokemon({ minWeight: weight }));
+        }
+    }
+
     return (
         <>
             <SearchBar/>
-            <WeightFilter {...{setFilters}}/>
-            <FiltersContainer>
-                <FilterLabel> Type:
-                    <SimpleFlexContainer>
-                        <StandardList>
-                            {props.typesList.map((type: IType, position: number) => (position % 2 === 0 ?
-                               <ListItem key={position}> 
-                                   <FlexLabel htmlFor={type.name}>
-                                    <Checkbox onClick={setFilters} {...{ type: 'checkbox', name: `${type.name}` }} /> {type.name}
-                                 </FlexLabel>
-                                </ListItem>
-                                : null))}
-                        </StandardList>
-                        <StandardList>
-                            {props.typesList.map((type: IType, position: number) => (position % 2 !== 0 ?
-                            <ListItem key={position}>
-                                <FlexLabel htmlFor={type.name}>
-                                    <Checkbox onClick={setFilters} {...{ type: 'checkbox', name: `${type.name}` }} /> {type.name}
-                                </FlexLabel>
-                                </ListItem>
-                                : null))}
-                        </StandardList>
-                    </SimpleFlexContainer>
-                </FilterLabel >
-            </FiltersContainer >
+            <WeightFilter setFilters={setFilters}/>
+            <TypesFilters typesList={pokemonTypes} setFilters={setFilters} isChecked={false}/>
         </>
     )
 }

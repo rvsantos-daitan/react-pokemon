@@ -1,9 +1,11 @@
 import { SidebarContainer } from './styles';
 
-export default function Sidebar(props) {
+const Sidebar: React.FC = ({children}) => {
     return (
         <SidebarContainer>
-            {props.children}
+            {children}
         </SidebarContainer>
     )
 }
+
+export default Sidebar

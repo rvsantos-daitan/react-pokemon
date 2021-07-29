@@ -4,16 +4,12 @@ import { selectByPokemonType, selectMaxWeight, selectMinWeight } from "./functio
 
 export const unorderedPokemonList = (state: StoreState) => state.initialData.pokemonList;
 
-//export const favoritePokemon = (state: StoreState) => state.favoritePokemon.favoritePokemon;
-
 const filters = (state: StoreState) => state.filterState;
 
 export const selectPokemon = createSelector([unorderedPokemonList, filters],
     (unorderedPokemonList, filters) => {
         const { minWeight, maxWeight, types } = filters;
         let pokemonList = unorderedPokemonList;
-
-        //if (favoritePokemon.length > 0) return favoritePokemon;
 
         if (minWeight) {
             pokemonList = selectMinWeight(minWeight, pokemonList);

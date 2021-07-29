@@ -22,18 +22,17 @@ export const FlexLabel = styled.label`
     font-weight: 500;
 `;
 
-export const FilterLabel = styled.label`
+export const FilterHeader = styled.h1`
     font-size: 1.2rem;
-    display: flex;
     flex-direction: column;
-    margin: .5rem;
+    margin-bottom: .5rem;
     font-weight: 500;
 `;
 
 
 export const Searchbar = styled.input`
     line-height: 1.5rem;
-
+    width: 100%;
     border-radius: 15px;
     padding-left: .5rem;
 `;
@@ -44,7 +43,9 @@ export const SmallInput = styled.input.attrs<IInputProps>((props) => ({ ...props
     height: 30px;
 
     border-radius: 10px;
+
     padding-left: .5rem;
+    margin-top: .3rem;
 `;
 
 export const SimpleFlexContainer = styled.div`
@@ -58,8 +59,7 @@ export const Checkbox = styled.input.attrs<IInputProps>((props) => ({ ...props }
 `;
 
 export const FiltersContainer = styled.div`
-    width: 100%;
-    padding: .5rem 10%;
+    padding: 1.3rem 10%;
     margin: 1rem;
     border-radius: 15px;
     background-color: rgb(247, 247, 247);

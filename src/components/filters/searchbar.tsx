@@ -1,13 +1,17 @@
-import { FilterLabel, FiltersContainer, Searchbar} from "../../global/generics/atoms/styles";
+import { FilterHeader, FiltersContainer, Searchbar} from "../../global/generics/atoms/styles";
 
-const SearchBar = () => {
+interface ISearchBarProps {
+  value?: string
+}
+
+const SearchBar: React.FC<ISearchBarProps> = ({value}) => {
 
   return (
     <FiltersContainer>
-      <FilterLabel>
+      <FilterHeader>
         Searchbox:
-        <Searchbar />
-      </FilterLabel>
+      </FilterHeader>
+      <Searchbar defaultValue={value}/>
     </FiltersContainer>
   );
 };

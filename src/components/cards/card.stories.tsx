@@ -2,15 +2,20 @@ import React from "react";
 
 import Card from "./card";
 
-import { POKEMON_MOCK } from "../../../mocks/pokemon.mock";
+import { POKEMON_MOCK } from "../../mocks/pokemon.mock";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
   component: Card,
   title: "Card",
-  decorators: [(story) => <div style={{ width: "40%" }}>{story()}</div>],
-};
+  argTypes: {
+    onFavorite: {
+      action: "favorited",
+    },
+  },
+} as ComponentMeta<typeof Card>
 
-const Template = (args) => <Card {...args} />;
+const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

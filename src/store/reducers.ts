@@ -1,8 +1,8 @@
 import IFilter from "../interfaces/filter.model";
 import { IPokemon, IPokemonFragment, IType } from "../interfaces/pokemon.model";
 
-/*
-interface IState {
+
+interface IPokemonState {
   results: IPokemon[],
   offset: number,
   limit: number,
@@ -10,9 +10,12 @@ interface IState {
   types: IType[],
   hasFetchedData: boolean
 }
-*/
 
-const initialState= {
+interface IHighlightedPokemonState {
+  highlightedPokemon: IPokemonFragment
+}
+
+const initialState: IPokemonState = {
   results: [],
   offset: 0,
   limit: 20,
@@ -28,6 +31,9 @@ const initialFilterState: IFilter = {
   maxWeight: 0
 }
 
+const initialPokemonSelection: IHighlightedPokemonState = {
+  highlightedPokemon: null
+}
 
 export const dataReducer = (state = initialState, action) => {
   if (action.type === "pokemon/fetchUnitData") {
@@ -46,10 +52,10 @@ export const dataReducer = (state = initialState, action) => {
     return {
       ...state,
       pokemonList: pokemonList
-      .map(pokemon => pokemon.id === action.pokemon.id ? 
-        { ...pokemon, isFavorite: !action.pokemon.isFavorite} 
-        : pokemon)
-      }
+        .map(pokemon => pokemon.id === action.pokemon.id ?
+          { ...pokemon, isFavorite: !action.pokemon.isFavorite }
+          : pokemon)
+    }
   }
   return state;
 }
@@ -72,6 +78,22 @@ export const filterReducer = (state = initialFilterState, action) => {
 
   if (action.type === "filter/clearFilter") {
     return { ...initialFilterState }
+  }
+
+  return state;
+}
+
+export const highlightedPokemonReducer = (state = initialPokemonSelection, action) => {
+  if (action.type === "pokemon/select") {
+    try {
+      const { highlightedPokemon } = state;
+      if (!highlightedPokemon || highlightedPokemon.id !== action.highlightedPokemon.id) {
+        return { ...state, highlightedPokemon: action.highlightedPokemon }
+      }
+    } catch (err) {
+      console.error(err);
+      return state;
+    }
   }
 
   return state;

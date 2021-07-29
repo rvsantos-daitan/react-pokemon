@@ -1,3 +1,4 @@
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
 
 import SearchBar from "./searchbar";
@@ -5,9 +6,9 @@ import SearchBar from "./searchbar";
 export default {
   component: SearchBar,
   title: "Searchbar",
-};
+} as ComponentMeta<typeof SearchBar>
 
-const Template = (args) => <SearchBar {...args} />;
+const Template: ComponentStory<typeof SearchBar> = (args) => <SearchBar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};

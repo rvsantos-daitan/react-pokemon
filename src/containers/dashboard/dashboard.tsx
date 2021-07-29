@@ -1,35 +1,49 @@
-import Card from "../../components/cards/card";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import toggleFavoritePokemon from '../../store/actions/favoritepokemon.action';
 import { IPokemonFragment } from "../../interfaces/pokemon.model";
 
 import { Container } from "./styles";
-import WideSidebar from "../../components/widesidebar/widesidebar";
+import { StoreState } from "../../store";
+import { setHighlightedPokemon } from "../../store/actions/highlightedpokemon.action";
+import HighlightedPokemon from "../../components/highlightedpokemon/highlightedpokemon";
+import PokemonList from "../../components/pokemonlist/pokemonlist";
+import { selectPokemon } from "../../store/selectors/filterselector";
+import { setInitialPokemonData } from "../../store/actions/fetchinitialdata.action";
+import { useEffect } from "react";
 
-interface IDashBoard {
-  pokemonList: IPokemonFragment[]
-}
 
-const Dashboard: React.FC<IDashBoard> = ({ pokemonList }) => {
+const Dashboard: React.FC = () => {
   const dispatch = useDispatch();
+  const highlightedPokemon = useSelector<StoreState, IPokemonFragment>(state => state.highlightedState.highlightedPokemon);
+  
+  useEffect(() => {
+      dispatch(setInitialPokemonData())
+  }, [])
+
+  const pokemonList = useSelector(selectPokemon);
+  
 
   const handleClick = (pokemon: IPokemonFragment) => {
     dispatch(toggleFavoritePokemon(pokemon))
   };
 
+  const handleHighlighted = (highlightedPokemon: IPokemonFragment) => {
+    dispatch(setHighlightedPokemon(highlightedPokemon));
+  }
+
   const cardProperties = {
+    pokemonList,
+    onFavorite: handleClick,
+    onHighlight: handleHighlighted,
     displayButton: true,
     display: 'flex'
   }
 
   return (
     <Container>
-      <WideSidebar>
-        {pokemonList.map((pokemon: IPokemonFragment) => (
-          <Card key={pokemon.name} pokemon={pokemon} action={handleClick} {...cardProperties}/>
-        ))}
-      </WideSidebar>
+      <HighlightedPokemon highlightedPokemon={highlightedPokemon}/>
+      <PokemonList {...cardProperties}/>
     </Container>
   );
 }

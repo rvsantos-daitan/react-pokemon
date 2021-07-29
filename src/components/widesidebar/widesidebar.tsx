@@ -1,9 +1,11 @@
 import { WideSidebarContainer } from './styles';
 
-export default function WideSidebar(props) {
+const WideSidebar: React.FC = ({children}) => {
     return (
         <WideSidebarContainer>
-            {props.children}
+            {children}
         </WideSidebarContainer>
     )
 }
+
+export default WideSidebar
