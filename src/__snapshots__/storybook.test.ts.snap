@@ -1,0 +1,1849 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Card Button Less 1`] = `
+<div
+  className="sc-jSFjdj hmtNXI"
+  onClick={[Function]}
+  width={null}
+>
+  <div
+    className="sc-hKFxyN cyspfq"
+  >
+    <img
+      alt="raticate"
+      className="sc-bdnxRM fLWeHw"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+      width="10rem"
+    />
+    <div
+      className="sc-eCApnc jziDNq"
+      width={80}
+    >
+      <h1
+        className="sc-gKAaRy ljuHFy"
+      >
+        raticate
+      </h1>
+      <div
+        className="sc-gtsrHT zKQpI"
+      >
+        <h6
+          className="sc-dlnjwi kdujpD"
+        >
+          normal
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Default 1`] = `
+<div
+  className="sc-jSFjdj hmtNXI"
+  onClick={[Function]}
+  width={null}
+>
+  <div
+    className="sc-hKFxyN cyspfq"
+  >
+    <img
+      alt="raticate"
+      className="sc-bdnxRM fLWeHw"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+      width="10rem"
+    />
+    <div
+      className="sc-eCApnc jziDNq"
+      width={80}
+    >
+      <h1
+        className="sc-gKAaRy ljuHFy"
+      >
+        raticate
+      </h1>
+      <div
+        className="sc-gtsrHT zKQpI"
+      >
+        <h6
+          className="sc-dlnjwi kdujpD"
+        >
+          normal
+        </h6>
+      </div>
+      <button
+        className="sc-iCoGMd iouTSo"
+        onClick={[Function]}
+      >
+        Favorite
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Favorite 1`] = `
+<div
+  className="sc-jSFjdj hmtNXI"
+  onClick={[Function]}
+  width={null}
+>
+  <div
+    className="sc-hKFxyN cyspfq"
+  >
+    <img
+      alt="raticate"
+      className="sc-bdnxRM fLWeHw"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+      width="10rem"
+    />
+    <div
+      className="sc-eCApnc jziDNq"
+      width={80}
+    >
+      <h1
+        className="sc-gKAaRy ljuHFy"
+      >
+        raticate
+      </h1>
+      <div
+        className="sc-gtsrHT zKQpI"
+      >
+        <h6
+          className="sc-dlnjwi kdujpD"
+        >
+          normal
+        </h6>
+      </div>
+      <button
+        className="sc-iCoGMd dACXwN"
+        onClick={[Function]}
+      >
+        Favorite
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Vertical Card 1`] = `
+<div
+  className="sc-jSFjdj btaQJr"
+  onClick={[Function]}
+  width="fit-content"
+>
+  <img
+    alt="raticate"
+    className="sc-bdnxRM fLWeHw"
+    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+    width="10rem"
+  />
+  <h1
+    className="sc-gKAaRy ljuHFy"
+  >
+    raticate
+  </h1>
+  <div
+    className="sc-gtsrHT zKQpI"
+  >
+    <h6
+      className="sc-dlnjwi kdujpD"
+    >
+      normal
+    </h6>
+  </div>
+  <button
+    className="sc-iCoGMd iouTSo"
+    onClick={[Function]}
+  >
+    Favorite
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Navigation Bar Default 1`] = `
+<div
+  className="sc-fFSPTT jmFYeb"
+>
+  <img
+    alt="Pokemon React logo"
+    className="sc-bkbkJK igpvTo"
+    src="./POKEMON-REACT.png"
+  />
+</div>
+`;
+
+exports[`Storyshots Components/Pokémon List Buttonless Pokemon Card 1`] = `
+<div
+  className="sc-dlMDgC eGcwcB"
+>
+  <div
+    className="sc-jSFjdj hmtNXI"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-hKFxyN cyspfq"
+    >
+      <img
+        alt="raticate"
+        className="sc-bdnxRM fLWeHw"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+        width="10rem"
+      />
+      <div
+        className="sc-eCApnc jziDNq"
+        width={80}
+      >
+        <h1
+          className="sc-gKAaRy ljuHFy"
+        >
+          raticate
+        </h1>
+        <div
+          className="sc-gtsrHT zKQpI"
+        >
+          <h6
+            className="sc-dlnjwi kdujpD"
+          >
+            normal
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Pokémon List Default 1`] = `
+<div
+  className="sc-dlMDgC eGcwcB"
+>
+  <div
+    className="sc-jSFjdj hmtNXI"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-hKFxyN cyspfq"
+    >
+      <img
+        alt="raticate"
+        className="sc-bdnxRM fLWeHw"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+        width="10rem"
+      />
+      <div
+        className="sc-eCApnc jziDNq"
+        width={80}
+      >
+        <h1
+          className="sc-gKAaRy ljuHFy"
+        >
+          raticate
+        </h1>
+        <div
+          className="sc-gtsrHT zKQpI"
+        >
+          <h6
+            className="sc-dlnjwi kdujpD"
+          >
+            normal
+          </h6>
+        </div>
+        <button
+          className="sc-iCoGMd iouTSo"
+          onClick={[Function]}
+        >
+          Favorite
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Pokémon List Empty List 1`] = `null`;
+
+exports[`Storyshots Components/Pokémon List Favorite Pokemon List 1`] = `
+<div
+  className="sc-dlMDgC eGcwcB"
+>
+  <div
+    className="sc-jSFjdj hmtNXI"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-hKFxyN cyspfq"
+    >
+      <img
+        alt="raticate"
+        className="sc-bdnxRM fLWeHw"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+        width="10rem"
+      />
+      <div
+        className="sc-eCApnc jziDNq"
+        width={80}
+      >
+        <h1
+          className="sc-gKAaRy ljuHFy"
+        >
+          raticate
+        </h1>
+        <div
+          className="sc-gtsrHT zKQpI"
+        >
+          <h6
+            className="sc-dlnjwi kdujpD"
+          >
+            normal
+          </h6>
+        </div>
+        <button
+          className="sc-iCoGMd dACXwN"
+          onClick={[Function]}
+        >
+          Favorite
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Searchbar Default 1`] = `
+<div
+  className="sc-bqGGPW jtyZUs"
+>
+  <h1
+    className="sc-jrsJWt jTKAZP"
+  >
+    Searchbox:
+  </h1>
+  <input
+    className="sc-kEqXSa euYTxW"
+  />
+</div>
+`;
+
+exports[`Storyshots Components/Searchbar Filled 1`] = `
+<div
+  className="sc-bqGGPW jtyZUs"
+>
+  <h1
+    className="sc-jrsJWt jTKAZP"
+  >
+    Searchbox:
+  </h1>
+  <input
+    className="sc-kEqXSa euYTxW"
+    defaultValue="Test Information"
+  />
+</div>
+`;
+
+exports[`Storyshots Components/Selected Pokémon Default 1`] = `
+<div
+  className="sc-iemWCZ eOLgwC"
+>
+  <div
+    className="sc-dIvrsQ iiGmJA"
+  >
+    <h1
+      className="sc-hHEiqL iBVwBc"
+    >
+      raticate
+    </h1>
+    <div
+      className="sc-gtsrHT cWeQZQ"
+    >
+      <h6
+        className="sc-dlnjwi kdujpD"
+      >
+        normal
+      </h6>
+    </div>
+    <img
+      alt="raticate"
+      className="sc-bdnxRM equxwD"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+      width="20rem"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selected Pokémon No Selection 1`] = `
+<div
+  className="sc-iemWCZ eOLgwC"
+/>
+`;
+
+exports[`Storyshots Components/Types Filter Checked Filter 1`] = `
+<div
+  className="sc-bqGGPW jtyZUs"
+>
+  <h1
+    className="sc-jrsJWt jTKAZP"
+  >
+     Type:
+  </h1>
+  <ul
+    className="sc-hBMUJo canUhN"
+  >
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="normal"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="normal"
+          type="checkbox"
+        />
+         
+        normal
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="fighting"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="fighting"
+          type="checkbox"
+        />
+         
+        fighting
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="flying"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="flying"
+          type="checkbox"
+        />
+         
+        flying
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="poison"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="poison"
+          type="checkbox"
+        />
+         
+        poison
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="ground"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="ground"
+          type="checkbox"
+        />
+         
+        ground
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="rock"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="rock"
+          type="checkbox"
+        />
+         
+        rock
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="bug"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="bug"
+          type="checkbox"
+        />
+         
+        bug
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="ghost"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="ghost"
+          type="checkbox"
+        />
+         
+        ghost
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="steel"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="steel"
+          type="checkbox"
+        />
+         
+        steel
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="fire"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="fire"
+          type="checkbox"
+        />
+         
+        fire
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="water"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="water"
+          type="checkbox"
+        />
+         
+        water
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="grass"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="grass"
+          type="checkbox"
+        />
+         
+        grass
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="electric"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="electric"
+          type="checkbox"
+        />
+         
+        electric
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="psychic"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="psychic"
+          type="checkbox"
+        />
+         
+        psychic
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="ice"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="ice"
+          type="checkbox"
+        />
+         
+        ice
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="dragon"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="dragon"
+          type="checkbox"
+        />
+         
+        dragon
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="dark"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="dark"
+          type="checkbox"
+        />
+         
+        dark
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="fairy"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="fairy"
+          type="checkbox"
+        />
+         
+        fairy
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="unknown"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="unknown"
+          type="checkbox"
+        />
+         
+        unknown
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="shadow"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={true}
+          name="shadow"
+          type="checkbox"
+        />
+         
+        shadow
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Types Filter Default 1`] = `
+<div
+  className="sc-bqGGPW jtyZUs"
+>
+  <h1
+    className="sc-jrsJWt jTKAZP"
+  >
+     Type:
+  </h1>
+  <ul
+    className="sc-hBMUJo canUhN"
+  >
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="normal"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="normal"
+          type="checkbox"
+        />
+         
+        normal
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="fighting"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="fighting"
+          type="checkbox"
+        />
+         
+        fighting
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="flying"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="flying"
+          type="checkbox"
+        />
+         
+        flying
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="poison"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="poison"
+          type="checkbox"
+        />
+         
+        poison
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="ground"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="ground"
+          type="checkbox"
+        />
+         
+        ground
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="rock"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="rock"
+          type="checkbox"
+        />
+         
+        rock
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="bug"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="bug"
+          type="checkbox"
+        />
+         
+        bug
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="ghost"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="ghost"
+          type="checkbox"
+        />
+         
+        ghost
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="steel"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="steel"
+          type="checkbox"
+        />
+         
+        steel
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="fire"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="fire"
+          type="checkbox"
+        />
+         
+        fire
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="water"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="water"
+          type="checkbox"
+        />
+         
+        water
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="grass"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="grass"
+          type="checkbox"
+        />
+         
+        grass
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="electric"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="electric"
+          type="checkbox"
+        />
+         
+        electric
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="psychic"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="psychic"
+          type="checkbox"
+        />
+         
+        psychic
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="ice"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="ice"
+          type="checkbox"
+        />
+         
+        ice
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="dragon"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="dragon"
+          type="checkbox"
+        />
+         
+        dragon
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="dark"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="dark"
+          type="checkbox"
+        />
+         
+        dark
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="fairy"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="fairy"
+          type="checkbox"
+        />
+         
+        fairy
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="unknown"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="unknown"
+          type="checkbox"
+        />
+         
+        unknown
+      </label>
+    </li>
+    <li
+      className="sc-fnVZcZ kwBVF"
+    >
+      <label
+        className="sc-pNWdM dFuhfL"
+        htmlFor="shadow"
+      >
+        <input
+          className="sc-dIsUp hfekEX"
+          defaultChecked={false}
+          name="shadow"
+          type="checkbox"
+        />
+         
+        shadow
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Weight Filter All Values 1`] = `
+<div
+  className="sc-bqGGPW jtyZUs"
+>
+  <h1
+    className="sc-jrsJWt jTKAZP"
+  >
+     Weight: 
+  </h1>
+  <div
+    className="sc-crzoAE kNezIy"
+  >
+    <label
+      className="sc-fujyAs irpqnW"
+      htmlFor="minWeight"
+    >
+      Min:
+      <input
+        className="sc-iqAclL gkcuCa"
+        defaultValue={20}
+        name="minWeight"
+        type="number"
+      />
+    </label>
+    <label
+      className="sc-fujyAs irpqnW"
+      htmlFor="maxWeight"
+    >
+      Max:
+      <input
+        className="sc-iqAclL gkcuCa"
+        defaultValue={100}
+        name="maxWeight"
+        type="number"
+      />
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Weight Filter Default 1`] = `
+<div
+  className="sc-bqGGPW jtyZUs"
+>
+  <h1
+    className="sc-jrsJWt jTKAZP"
+  >
+     Weight: 
+  </h1>
+  <div
+    className="sc-crzoAE kNezIy"
+  >
+    <label
+      className="sc-fujyAs irpqnW"
+      htmlFor="minWeight"
+    >
+      Min:
+      <input
+        className="sc-iqAclL gkcuCa"
+        defaultValue={null}
+        name="minWeight"
+        type="number"
+      />
+    </label>
+    <label
+      className="sc-fujyAs irpqnW"
+      htmlFor="maxWeight"
+    >
+      Max:
+      <input
+        className="sc-iqAclL gkcuCa"
+        defaultValue={null}
+        name="maxWeight"
+        type="number"
+      />
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Containers/Dashboard Dashboard Highlighted 1`] = `
+<div
+  className="sc-kfYoZR jKoXUd"
+>
+  <div
+    className="sc-iemWCZ eOLgwC"
+  >
+    <div
+      className="sc-dIvrsQ iiGmJA"
+    >
+      <h1
+        className="sc-hHEiqL iBVwBc"
+      >
+        charmander
+      </h1>
+      <div
+        className="sc-gtsrHT cWeQZQ"
+      >
+        <h6
+          className="sc-dlnjwi lgmviB"
+        >
+          fire
+        </h6>
+      </div>
+      <img
+        alt="charmander"
+        className="sc-bdnxRM equxwD"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+        width="20rem"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Containers/Dashboard Default 1`] = `
+<div
+  className="sc-kfYoZR jKoXUd"
+>
+  <div
+    className="sc-iemWCZ eOLgwC"
+  />
+</div>
+`;
+
+exports[`Storyshots Containers/Pokemon Filter Container Default 1`] = `
+Array [
+  <div
+    className="sc-bqGGPW jtyZUs"
+  >
+    <h1
+      className="sc-jrsJWt jTKAZP"
+    >
+      Searchbox:
+    </h1>
+    <input
+      className="sc-kEqXSa euYTxW"
+    />
+  </div>,
+  <div
+    className="sc-bqGGPW jtyZUs"
+  >
+    <h1
+      className="sc-jrsJWt jTKAZP"
+    >
+       Weight: 
+    </h1>
+    <div
+      className="sc-crzoAE kNezIy"
+    >
+      <label
+        className="sc-fujyAs irpqnW"
+        htmlFor="minWeight"
+      >
+        Min:
+        <input
+          className="sc-iqAclL gkcuCa"
+          defaultValue={null}
+          name="minWeight"
+          onChange={[Function]}
+          type="number"
+        />
+      </label>
+      <label
+        className="sc-fujyAs irpqnW"
+        htmlFor="maxWeight"
+      >
+        Max:
+        <input
+          className="sc-iqAclL gkcuCa"
+          defaultValue={null}
+          name="maxWeight"
+          onChange={[Function]}
+          type="number"
+        />
+      </label>
+    </div>
+  </div>,
+  <div
+    className="sc-bqGGPW jtyZUs"
+  >
+    <h1
+      className="sc-jrsJWt jTKAZP"
+    >
+       Type:
+    </h1>
+    <ul
+      className="sc-hBMUJo canUhN"
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Example/Button Large 1`] = `
+<button
+  className="storybook-button storybook-button--large storybook-button--secondary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Primary 1`] = `
+<button
+  className="storybook-button storybook-button--medium storybook-button--primary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Secondary 1`] = `
+<button
+  className="storybook-button storybook-button--medium storybook-button--secondary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Small 1`] = `
+<button
+  className="storybook-button storybook-button--small storybook-button--secondary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Header Logged In 1`] = `
+<header>
+  <div
+    className="wrapper"
+  >
+    <div>
+      <svg
+        height="32"
+        viewBox="0 0 32 32"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
+            fill="#FFF"
+          />
+          <path
+            d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
+            fill="#555AB9"
+          />
+          <path
+            d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
+            fill="#91BAF8"
+          />
+        </g>
+      </svg>
+      <h1>
+        Acme
+      </h1>
+    </div>
+    <div>
+      <button
+        className="storybook-button storybook-button--small storybook-button--secondary"
+        style={
+          Object {
+            "backgroundColor": undefined,
+          }
+        }
+        type="button"
+      >
+        Log out
+      </button>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Example/Header Logged Out 1`] = `
+<header>
+  <div
+    className="wrapper"
+  >
+    <div>
+      <svg
+        height="32"
+        viewBox="0 0 32 32"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
+            fill="#FFF"
+          />
+          <path
+            d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
+            fill="#555AB9"
+          />
+          <path
+            d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
+            fill="#91BAF8"
+          />
+        </g>
+      </svg>
+      <h1>
+        Acme
+      </h1>
+    </div>
+    <div>
+      <button
+        className="storybook-button storybook-button--small storybook-button--secondary"
+        style={
+          Object {
+            "backgroundColor": undefined,
+          }
+        }
+        type="button"
+      >
+        Log in
+      </button>
+      <button
+        className="storybook-button storybook-button--small storybook-button--primary"
+        style={
+          Object {
+            "backgroundColor": undefined,
+          }
+        }
+        type="button"
+      >
+        Sign up
+      </button>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Example/Page Logged In 1`] = `
+<article>
+  <header>
+    <div
+      className="wrapper"
+    >
+      <div>
+        <svg
+          height="32"
+          viewBox="0 0 32 32"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
+              fill="#FFF"
+            />
+            <path
+              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
+              fill="#555AB9"
+            />
+            <path
+              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
+              fill="#91BAF8"
+            />
+          </g>
+        </svg>
+        <h1>
+          Acme
+        </h1>
+      </div>
+      <div>
+        <button
+          className="storybook-button storybook-button--small storybook-button--secondary"
+          style={
+            Object {
+              "backgroundColor": undefined,
+            }
+          }
+          type="button"
+        >
+          Log out
+        </button>
+      </div>
+    </div>
+  </header>
+  <section>
+    <h2>
+      Pages in Storybook
+    </h2>
+    <p>
+      We recommend building UIs with a
+       
+      <a
+        href="https://componentdriven.org"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <strong>
+          component-driven
+        </strong>
+      </a>
+       
+      process starting with atomic components and ending with pages.
+    </p>
+    <p>
+      Render pages with mock data. This makes it easy to build and review page states without needing to navigate to them in your app. Here are some handy patterns for managing page data in Storybook:
+    </p>
+    <ul>
+      <li>
+        Use a higher-level connected component. Storybook helps you compose such data from the "args" of child component stories
+      </li>
+      <li>
+        Assemble data in the page component from your services. You can mock these services out using Storybook.
+      </li>
+    </ul>
+    <p>
+      Get a guided tutorial on component-driven development at
+       
+      <a
+        href="https://storybook.js.org/tutorials/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Storybook tutorials
+      </a>
+      . Read more in the
+       
+      <a
+        href="https://storybook.js.org/docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        docs
+      </a>
+      .
+    </p>
+    <div
+      className="tip-wrapper"
+    >
+      <span
+        className="tip"
+      >
+        Tip
+      </span>
+       Adjust the width of the canvas with the
+       
+      <svg
+        height="10"
+        viewBox="0 0 12 12"
+        width="10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z"
+            fill="#999"
+            id="a"
+          />
+        </g>
+      </svg>
+      Viewports addon in the toolbar
+    </div>
+  </section>
+</article>
+`;
+
+exports[`Storyshots Example/Page Logged Out 1`] = `
+<article>
+  <header>
+    <div
+      className="wrapper"
+    >
+      <div>
+        <svg
+          height="32"
+          viewBox="0 0 32 32"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
+              fill="#FFF"
+            />
+            <path
+              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
+              fill="#555AB9"
+            />
+            <path
+              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
+              fill="#91BAF8"
+            />
+          </g>
+        </svg>
+        <h1>
+          Acme
+        </h1>
+      </div>
+      <div>
+        <button
+          className="storybook-button storybook-button--small storybook-button--secondary"
+          style={
+            Object {
+              "backgroundColor": undefined,
+            }
+          }
+          type="button"
+        >
+          Log in
+        </button>
+        <button
+          className="storybook-button storybook-button--small storybook-button--primary"
+          style={
+            Object {
+              "backgroundColor": undefined,
+            }
+          }
+          type="button"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+  </header>
+  <section>
+    <h2>
+      Pages in Storybook
+    </h2>
+    <p>
+      We recommend building UIs with a
+       
+      <a
+        href="https://componentdriven.org"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <strong>
+          component-driven
+        </strong>
+      </a>
+       
+      process starting with atomic components and ending with pages.
+    </p>
+    <p>
+      Render pages with mock data. This makes it easy to build and review page states without needing to navigate to them in your app. Here are some handy patterns for managing page data in Storybook:
+    </p>
+    <ul>
+      <li>
+        Use a higher-level connected component. Storybook helps you compose such data from the "args" of child component stories
+      </li>
+      <li>
+        Assemble data in the page component from your services. You can mock these services out using Storybook.
+      </li>
+    </ul>
+    <p>
+      Get a guided tutorial on component-driven development at
+       
+      <a
+        href="https://storybook.js.org/tutorials/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Storybook tutorials
+      </a>
+      . Read more in the
+       
+      <a
+        href="https://storybook.js.org/docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        docs
+      </a>
+      .
+    </p>
+    <div
+      className="tip-wrapper"
+    >
+      <span
+        className="tip"
+      >
+        Tip
+      </span>
+       Adjust the width of the canvas with the
+       
+      <svg
+        height="10"
+        viewBox="0 0 12 12"
+        width="10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z"
+            fill="#999"
+            id="a"
+          />
+        </g>
+      </svg>
+      Viewports addon in the toolbar
+    </div>
+  </section>
+</article>
+`;
+
+exports[`Storyshots Pages/Main Page Default 1`] = `
+Array [
+  <div
+    className="sc-fFSPTT jmFYeb"
+  >
+    <img
+      alt="Pokemon React logo"
+      className="sc-bkbkJK igpvTo"
+      src="./POKEMON-REACT.png"
+    />
+  </div>,
+  <div
+    className="sc-hKFxyN cyspfq"
+  >
+    <div
+      className="sc-fKgJPI jmuWtn"
+    >
+      <div
+        className="sc-bqGGPW jtyZUs"
+      >
+        <h1
+          className="sc-jrsJWt jTKAZP"
+        >
+          Searchbox:
+        </h1>
+        <input
+          className="sc-kEqXSa euYTxW"
+        />
+      </div>
+      <div
+        className="sc-bqGGPW jtyZUs"
+      >
+        <h1
+          className="sc-jrsJWt jTKAZP"
+        >
+           Weight: 
+        </h1>
+        <div
+          className="sc-crzoAE kNezIy"
+        >
+          <label
+            className="sc-fujyAs irpqnW"
+            htmlFor="minWeight"
+          >
+            Min:
+            <input
+              className="sc-iqAclL gkcuCa"
+              defaultValue={null}
+              name="minWeight"
+              onChange={[Function]}
+              type="number"
+            />
+          </label>
+          <label
+            className="sc-fujyAs irpqnW"
+            htmlFor="maxWeight"
+          >
+            Max:
+            <input
+              className="sc-iqAclL gkcuCa"
+              defaultValue={null}
+              name="maxWeight"
+              onChange={[Function]}
+              type="number"
+            />
+          </label>
+        </div>
+      </div>
+      <div
+        className="sc-bqGGPW jtyZUs"
+      >
+        <h1
+          className="sc-jrsJWt jTKAZP"
+        >
+           Type:
+        </h1>
+        <ul
+          className="sc-hBMUJo canUhN"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-kfYoZR jKoXUd"
+    >
+      <div
+        className="sc-iemWCZ eOLgwC"
+      >
+        <div
+          className="sc-dIvrsQ iiGmJA"
+        >
+          <h1
+            className="sc-hHEiqL iBVwBc"
+          >
+            charmander
+          </h1>
+          <div
+            className="sc-gtsrHT cWeQZQ"
+          >
+            <h6
+              className="sc-dlnjwi lgmviB"
+            >
+              fire
+            </h6>
+          </div>
+          <img
+            alt="charmander"
+            className="sc-bdnxRM equxwD"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+            width="20rem"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
