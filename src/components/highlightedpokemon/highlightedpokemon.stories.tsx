@@ -6,7 +6,7 @@ import HighlightedPokemon from "./highlightedpokemon";
 
 export default {
   component: HighlightedPokemon,
-  title: "Selected Pokémon",
+  title: "Components/Selected Pokémon",
 } as ComponentMeta<typeof HighlightedPokemon>
 
 const Template: ComponentStory<typeof HighlightedPokemon> = (args) => <HighlightedPokemon {...args} />;
@@ -18,5 +18,5 @@ Default.args = {
 
 export const NoSelection = Template.bind({});
 NoSelection.args = {
-  highlightedPokemon: null,
+  highlightedPokemon: {},
 };

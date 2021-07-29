@@ -1,13 +1,13 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import React from 'react';
-import { POKEMON_MOCK } from '../../mocks/pokemon.mock';
-import { Favorite } from '../cards/card.stories';
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import React from "react";
+import { POKEMON_MOCK } from "../../mocks/pokemon.mock";
+import { Favorite } from "../cards/card.stories";
 
-import PokemonList from './pokemonlist';
+import PokemonList from "./pokemonlist";
 
 export default {
     component: PokemonList,
-    title: 'Pokémon List'
+    title: "Components/Pokémon List"
 } as ComponentMeta<typeof PokemonList>
 
 const Template: ComponentStory<typeof PokemonList> = args => <PokemonList {...args}/>;
@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof PokemonList> = args => <PokemonList {...ar
 export const Default = Template.bind({});
 Default.args = {
     pokemonList: [POKEMON_MOCK],
-    display: 'flex',
+    display: "flex",
     displayButton: true
 }
 

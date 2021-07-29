@@ -17,4 +17,9 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  options: {
+    storySort: {
+      order: ["Components", "Containers", "Pages', 'Examples"],
+    },
+  },
 };

@@ -5,7 +5,7 @@ import SearchBar from "./searchbar";
 
 export default {
   component: SearchBar,
-  title: "Searchbar",
+  title: "Components/Searchbar",
 } as ComponentMeta<typeof SearchBar>
 
 const Template: ComponentStory<typeof SearchBar> = (args) => <SearchBar {...args} />;

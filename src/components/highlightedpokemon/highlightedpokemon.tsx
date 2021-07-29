@@ -11,7 +11,7 @@ const HighlightedPokemon: React.FC<IHighlightedPokemonProps> = ({highlightedPoke
 
     return(
         <Wrapper>
-           {highlightedPokemon ? 
+           {Object.values(highlightedPokemon).length > 0 ? 
             <HighlightedGrid>
                 <Header>{highlightedPokemon.name}</Header>
                 <TypesBadge gridArea={"types"} types={highlightedPokemon.types.map(({ type }) => type.name)}/>

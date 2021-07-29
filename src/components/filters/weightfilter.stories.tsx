@@ -5,7 +5,7 @@ import WeightFilter from "./weightfilter";
 
 export default {
   component: WeightFilter,
-  title: "Weight Filter",
+  title: "Components/Weight Filter",
 } as ComponentMeta<typeof WeightFilter>
 
 const Template: ComponentStory<typeof WeightFilter> = (args) => <WeightFilter {...args} />;

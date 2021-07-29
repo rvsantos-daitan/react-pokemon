@@ -7,7 +7,7 @@ import PokemonFilter from "./pokemonfilter";
 
 export default {
   component: PokemonFilter,
-  title: "Pokemon Filter Container",
+  title: "Containers/Pokemon Filter Container",
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
 } as ComponentMeta<typeof PokemonFilter>
 

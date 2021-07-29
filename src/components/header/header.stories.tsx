@@ -5,7 +5,7 @@ import { Navbar } from "./navbar";
 
 export default {
   component: Navbar,
-  title: "Navigation Bar",
+  title: "Components/Navigation Bar",
 } as ComponentMeta<typeof Navbar>
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 

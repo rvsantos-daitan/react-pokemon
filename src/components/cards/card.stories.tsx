@@ -7,7 +7,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
   component: Card,
-  title: "Card",
+  title: "Components/Card",
   argTypes: {
     onFavorite: {
       action: "favorited",

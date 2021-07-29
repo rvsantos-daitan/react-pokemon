@@ -6,7 +6,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
   component: TypesFilters,
-  title: "Types Filter",
+  title: "Components/Types Filter",
 } as ComponentMeta<typeof TypesFilters>
 
 const Template: ComponentStory<typeof TypesFilters> = (args) => <TypesFilters {...args} />;

@@ -1,14 +1,14 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import React from 'react';
-import { Provider } from 'react-redux';
-import { store } from '../store';
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import React from "react";
+import { Provider } from "react-redux";
+import { store } from "../store";
 
-import Main from './main';
+import Main from "./main";
 
 export default {
     component: Main,
-    title: 'Main Page',
-    decorators: [story => <Provider store={store}>{story()}</Provider>]
+    title: "Pages/Main Page",
+    decoratos: [story => <Provider store={store}>{story()}</Provider>]
 } as ComponentMeta<typeof Main>
 
 const Template: ComponentStory<typeof Main> = args => <Main {...args}/>

@@ -34,7 +34,6 @@ export interface IPokemon {
 
 export interface IAbilittySet {
   ability: IAbility;
-  url: string;
   is_hidden: boolean;
   slot: number;
 }
@@ -71,7 +70,6 @@ interface ISprite {
   back_shiny: string;
   back_shiny_female: string | null;
   front_default: string;
-  front_default_female: string | null;
   front_shiny: string;
   front_shiny_female: string | null;
   other: any;
