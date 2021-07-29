@@ -27,7 +27,11 @@ const PokemonList: React.FC<IPokemonListProps> = ({pokemonList, displayButton, d
     </WideSidebar>
   )
 
-  return pokemonList.length > 0 ? pokemons : null;
+  const emptyList = (
+    <WideSidebar/>
+  )
+
+  return pokemonList.length > 0 ? pokemons : emptyList;
   
 }
 

@@ -32,7 +32,7 @@ const initialFilterState: IFilter = {
 }
 
 const initialPokemonSelection: IHighlightedPokemonState = {
-  highlightedPokemon: null
+  highlightedPokemon: {} as IPokemonFragment
 }
 
 export const dataReducer = (state = initialState, action) => {

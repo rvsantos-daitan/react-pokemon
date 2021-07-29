@@ -9,19 +9,24 @@ interface IHighlightedPokemonProps {
 
 const HighlightedPokemon: React.FC<IHighlightedPokemonProps> = ({highlightedPokemon}) => {
 
+    if(!Object.values(highlightedPokemon).length) {
+        return (
+            <div></div>
+        )
+    }
+
+
     return(
         <Wrapper>
-           {Object.values(highlightedPokemon).length > 0 ? 
-            <HighlightedGrid>
-                <Header>{highlightedPokemon.name}</Header>
-                <TypesBadge gridArea={"types"} types={highlightedPokemon.types.map(({ type }) => type.name)}/>
-                <Sprite gridArea={"main-content"} 
-                    src={highlightedPokemon.sprites.front_default} 
-                    alt={highlightedPokemon.name} 
-                    width={"20rem"}
-                />
+           <HighlightedGrid>
+            <Header>{highlightedPokemon.name}</Header>
+            <TypesBadge gridArea={"types"} types={highlightedPokemon.types.map(({ type }) => type.name)}/>
+            <Sprite gridArea={"main-content"} 
+                src={highlightedPokemon.sprites.front_default} 
+                alt={highlightedPokemon.name} 
+                width={"20rem"}
+            />
             </HighlightedGrid>
-        : null}
         </Wrapper>
     )
 }

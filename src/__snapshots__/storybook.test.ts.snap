@@ -261,7 +261,11 @@ exports[`Storyshots Components/Pokémon List Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Pokémon List Empty List 1`] = `null`;
+exports[`Storyshots Components/Pokémon List Empty List 1`] = `
+<div
+  className="sc-dlMDgC eGcwcB"
+/>
+`;
 
 exports[`Storyshots Components/Pokémon List Favorite Pokemon List 1`] = `
 <div
@@ -372,11 +376,7 @@ exports[`Storyshots Components/Selected Pokémon Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Selected Pokémon No Selection 1`] = `
-<div
-  className="sc-iemWCZ eOLgwC"
-/>
-`;
+exports[`Storyshots Components/Selected Pokémon No Selection 1`] = `<div />`;
 
 exports[`Storyshots Components/Types Filter Checked Filter 1`] = `
 <div
@@ -1202,6 +1202,9 @@ exports[`Storyshots Containers/Dashboard Dashboard Highlighted 1`] = `
       />
     </div>
   </div>
+  <div
+    className="sc-dlMDgC eGcwcB"
+  />
 </div>
 `;
 
@@ -1209,8 +1212,9 @@ exports[`Storyshots Containers/Dashboard Default 1`] = `
 <div
   className="sc-kfYoZR jKoXUd"
 >
+  <div />
   <div
-    className="sc-iemWCZ eOLgwC"
+    className="sc-dlMDgC eGcwcB"
   />
 </div>
 `;
@@ -1843,6 +1847,9 @@ Array [
           />
         </div>
       </div>
+      <div
+        className="sc-dlMDgC eGcwcB"
+      />
     </div>
   </div>,
 ]
