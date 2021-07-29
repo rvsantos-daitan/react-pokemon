@@ -66,3 +66,16 @@ export const FiltersContainer = styled.div`
 `;
 
 export const SliderFilter = styled.input.attrs({ type: 'range', min: '0', max: '1000' })``;
+
+export const NumberBadge = styled.span`
+    border-radius: 5px;
+    padding: 3px;
+
+    font-size: .8rem;
+    font-weight: 600;
+
+    background-color: #616161;
+    color: white;
+    margin-left: .5rem;
+    vertical-align: middle;
+`;
