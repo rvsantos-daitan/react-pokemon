@@ -1,4 +1,5 @@
 import { Sprite } from '../../global/generics/atoms/sprite/sprite';
+import { NumberBadge } from '../../global/generics/atoms/styles';
 import TypesBadge from '../../global/generics/badge/typesbadge';
 import { FlexContainer, FlexColumnContainer } from '../../global/generics/flexcontainer/flexcontainer';
 import { IPokemonFragment } from '../../interfaces/pokemon.model';
@@ -30,7 +31,10 @@ const Card: React.FC<ICardProps> = ({ pokemon, displayButton, display, cardWidth
         <FlexContainer>
             <Sprite src={pokemon.sprites.front_default} alt={pokemon.name} width={"10rem"}/>
             <FlexColumnContainer width={80}>
-                <CardHeader>{pokemon.name}</CardHeader>
+                <CardHeader>
+                    {pokemon.name}
+                    <NumberBadge>#{pokemon.id}</NumberBadge>
+                </CardHeader>
                 <TypesBadge types={types}/>
                 {displayButton? buttonDisplay : null}
             </FlexColumnContainer>
@@ -40,7 +44,10 @@ const Card: React.FC<ICardProps> = ({ pokemon, displayButton, display, cardWidth
     const columnDisplay = (
         <>
             <Sprite src={pokemon.sprites.front_default} alt={pokemon.name} width={"10rem"}/>
-            <CardHeader>{pokemon.name}</CardHeader>
+            <CardHeader>
+                {pokemon.name}
+                <NumberBadge>#{pokemon.id}</NumberBadge>
+            </CardHeader>
             <TypesBadge types={types}/>
             {displayButton? buttonDisplay : null}
         </>
