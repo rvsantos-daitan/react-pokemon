@@ -17,9 +17,8 @@ export const Label = styled.label`
 
 export const FlexLabel = styled.label`
     font-size: .9rem;
-    display: flex;
-    margin-bottom: .5rem;
     font-weight: 500;
+    text-transform: capitalize;
 `;
 
 export const FilterHeader = styled.h1`
@@ -56,11 +55,12 @@ export const SimpleFlexContainer = styled.div`
 export const Checkbox = styled.input.attrs<IInputProps>((props) => ({ ...props }))`
     margin-right: .4rem;
     height: 13px;
+    vertical-align: middle;
 `;
 
 export const FiltersContainer = styled.div`
     padding: 1.3rem 10%;
-    margin: 1rem;
+    margin-bottom: 1rem;
     border-radius: 15px;
     background-color: rgb(247, 247, 247);
 `;
@@ -70,10 +70,8 @@ export const SliderFilter = styled.input.attrs({ type: 'range', min: '0', max: '
 export const NumberBadge = styled.span`
     border-radius: 5px;
     padding: 3px;
-
     font-size: .8rem;
     font-weight: 600;
-
     background-color: #616161;
     color: white;
     margin-left: .5rem;

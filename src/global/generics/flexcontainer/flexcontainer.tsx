@@ -2,8 +2,14 @@ import styled from "styled-components"
 
 export const FlexContainer = styled.div`
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "sprite header"
+        "sprite types"
+        "sprite button"
 `;
 
 interface IFlexColumnContainerProps {

@@ -26,7 +26,7 @@ const PokemonFilter: React.FC = () => {
         return handleSetRangeValue(values[0], values[1]);
     }
 
-    const setFilters = (event) => {
+    const setFilters = (event: Event & { target: InputEvent}) => {
         const { target } = event;
         const filter = filterFunctionFactory(execFilter);
         filter[target.type](target);

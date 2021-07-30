@@ -1,20 +1,20 @@
 import Dashboard from "../containers/dashboard/dashboard"
-import { Navbar } from "../components/header/navbar";
-import Sidebar from "../components/sidebar/sidebar"
-import { FlexContainer } from "../global/generics/flexcontainer/flexcontainer";
+import Navbar from "../components/header/navbar";
+import Sidebar from "../global/generics/sidebar/sidebar"
 import PokemonFilter from "../containers/filters/pokemonfilter";
+import { FlexWrapper } from "./style";
 
 const Main: React.FC = () => {
 
     return (
         <>
             <Navbar />
-            <FlexContainer>
+            <FlexWrapper>
                 <Sidebar >
                     <PokemonFilter/>
                 </Sidebar>
                 <Dashboard />
-            </FlexContainer>
+            </FlexWrapper>
         </>
     )
 }

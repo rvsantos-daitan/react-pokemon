@@ -1,6 +1,6 @@
 import { IPokemonFragment } from "../../interfaces/pokemon.model";
 import Card from "../cards/card";
-import WideSidebar from "../widesidebar/widesidebar";
+import WideSidebar from "../../global/generics/widesidebar/widesidebar";
 
 interface IPokemonListProps {
     pokemonList: IPokemonFragment[],

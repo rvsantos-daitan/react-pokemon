@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StandardList = styled.ul`
     width: 100%;
-    padding: 0;
     list-style:none;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -11,4 +10,5 @@ export const StandardList = styled.ul`
 
 export const ListItem = styled.li`
     width: fit-content;
+    margin-bottom: .5rem;
 `;

@@ -1,7 +1,7 @@
 import { Sprite } from '../../global/generics/atoms/sprite/sprite';
 import { NumberBadge } from '../../global/generics/atoms/styles';
 import TypesBadge from '../../global/generics/badge/typesbadge';
-import { FlexContainer, FlexColumnContainer } from '../../global/generics/flexcontainer/flexcontainer';
+import { FlexContainer } from '../../global/generics/flexcontainer/flexcontainer';
 import { IPokemonFragment } from '../../interfaces/pokemon.model';
 
 import { Button, CardContainer, CardHeader } from './styles';
@@ -21,6 +21,7 @@ const Card: React.FC<ICardProps> = ({ pokemon, displayButton, display, cardWidth
     const types = pokemon.types.map(({ type }) => type.name)
     const buttonDisplay = (
         <Button 
+            gridArea={"button"}
             onClick={() => onFavorite && onFavorite(pokemon)} 
             state={{backgroundColor: pokemon.isFavorite? 'PokemonYellow' : 'White'}}
             >Favorite
@@ -29,15 +30,13 @@ const Card: React.FC<ICardProps> = ({ pokemon, displayButton, display, cardWidth
 
     const flexDisplay = (
         <FlexContainer>
-            <Sprite src={pokemon.sprites.front_default} alt={pokemon.name} width={"10rem"}/>
-            <FlexColumnContainer width={80}>
-                <CardHeader>
+            <Sprite src={pokemon.sprites.front_default} alt={pokemon.name} width={"10rem"} gridArea={"sprite"}/>
+                <CardHeader gridArea={"header"}>
                     {pokemon.name}
                     <NumberBadge>#{pokemon.id}</NumberBadge>
                 </CardHeader>
-                <TypesBadge types={types}/>
+                <TypesBadge types={types}  gridArea={"types"}/>
                 {displayButton? buttonDisplay : null}
-            </FlexColumnContainer>
         </FlexContainer>
     )
 

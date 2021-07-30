@@ -25,16 +25,32 @@ export const CardContainer = styled.div<ICardContainerProps>`
   text-align: center;
 `;
 
-export const CardHeader = styled.h1`
+interface ICardReader {
+  gridArea?: string;
+}
+
+export const CardHeader = styled.h1<ICardReader>`
+  ${({ gridArea }) => {
+    let cssValues: string = "";
+
+    if (gridArea) {
+      cssValues = cssValues.concat(`grid-area: ${gridArea}; `)
+    };
+
+    if (!cssValues) return;
+
+    return cssValues;
+  }};
   font-size: 1.5rem;
   font-family: sans-serif;
+  align-self: center;
 
-  margin: .5rem 0;
   text-transform: capitalize;
 `;
 
 interface IButtonProps {
   state?: IGenericProperties,
+  gridArea?: string
 }
 
 interface IGenericProperties {
@@ -42,7 +58,7 @@ interface IGenericProperties {
 }
 
 export const Button = styled.button<IButtonProps>`
-    ${({ state }): string => {
+  ${({ state }): string => {
     const colors = {
       'PokemonYellow': ' #FFCB05',
       'White': 'transparent'
@@ -50,9 +66,21 @@ export const Button = styled.button<IButtonProps>`
 
     return `background-color: ${colors[state.backgroundColor]};`
   }}
-    margin: .2rem auto .7rem;
-    font-size: 1rem;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 90%;
+
+  ${({ gridArea }) => {
+    let cssValues: string = "";
+
+    if (gridArea) {
+      cssValues = cssValues.concat(`grid-area: ${gridArea}; `)
+    };
+
+    if (!cssValues) return;
+
+    return cssValues;
+  }};
+  margin: .2rem auto .7rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 90%;
 `;
