@@ -1,7 +1,8 @@
 import { Sprite } from "../../global/generics/atoms/sprite/sprite";
+import { Wrapper } from "../../global/generics/atoms/wrapper/wrapper";
 import TypesBadge from "../../global/generics/badge/typesbadge";
 import { IPokemonFragment } from "../../interfaces/pokemon.model";
-import { Header, HighlightedGrid, Wrapper } from "./styles";
+import { Header, HighlightedGrid } from "./styles";
 
 interface IHighlightedPokemonProps {
     highlightedPokemon: IPokemonFragment,
@@ -11,13 +12,13 @@ const HighlightedPokemon: React.FC<IHighlightedPokemonProps> = ({highlightedPoke
 
     if(!Object.values(highlightedPokemon).length) {
         return (
-            <div></div>
+            <Wrapper width={"60%"}></Wrapper>
         )
     }
 
 
     return(
-        <Wrapper>
+        <Wrapper width={"60%"}>
            <HighlightedGrid>
             <Header>{highlightedPokemon.name}</Header>
             <TypesBadge gridArea={"types"} types={highlightedPokemon.types.map(({ type }) => type.name)}/>

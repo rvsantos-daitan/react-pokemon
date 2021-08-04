@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-interface IWrapper {
-    width?: number
-}
-
-export const Wrapper = styled.div<IWrapper>`
-    ${({ width }): string => {
-        return `width: ${width}`
-    }}
-`;
-
 export const HighlightedGrid = styled.div`
     height: fit-content;
 

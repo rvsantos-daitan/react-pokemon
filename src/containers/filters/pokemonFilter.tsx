@@ -2,37 +2,40 @@ import filterFunctionFactory from '../../global/functions/filterfunctions.factor
 import WeightFilter from "../../components/filters/weightfilter";
 import SearchBar from "../../components/filters/searchbar";
 import TypesFilters from "../../components/filters/typesfilter";
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { StoreState } from '../../store';
 import { IType } from '../../interfaces/pokemon.model';
 import { filterPokemon, removeFilter } from '../../store/actions/filter.action';
 import { setInitialTypesData } from '../../store/actions/fetchinitialdata.action';
+import { Wrapper } from '../../global/generics/atoms/wrapper/wrapper';
+import { FocusContext } from '../../contexts/focuscontext';
 
 const PokemonFilter: React.FC = () => {
     const dispatch = useDispatch();
-    
+    const { filterFocusReference } = useContext(FocusContext);
+
     useEffect(() => {
         dispatch(setInitialTypesData());
     }, [])
 
     const pokemonTypes = useSelector<StoreState, IType[]>(state => (state.initialData.types));
 
-    const execFilter = (inputType: string, ...values) => {        
+    const execFilter = (inputType: string, name: string, inputProp: any) => {
         if (inputType === 'checkbox') {
-            return handleTypesFilter(values[0], values[1]);
+            return handleTypesFilter(name, inputProp);
         }
 
-        return handleSetRangeValue(values[0], values[1]);
+        return handleSetRangeValue(name, inputProp);
     }
 
-    const setFilters = (event: Event & { target: InputEvent}) => {
+    const setFilters = (event: Event & { target: InputEvent }) => {
         const { target } = event;
         const filter = filterFunctionFactory(execFilter);
         filter[target.type](target);
     }
 
-    const handleTypesFilter = (isTypeChecked: boolean, markedType: string) => {
+    const handleTypesFilter = (markedType: string, isTypeChecked: boolean) => {
         isTypeChecked ? dispatch(filterPokemon({ types: [markedType] })) : dispatch(removeFilter('types', markedType))
     }
 
@@ -45,11 +48,16 @@ const PokemonFilter: React.FC = () => {
     }
 
     return (
-        <>
-            <SearchBar/>
-            <WeightFilter setFilters={setFilters}/>
-            <TypesFilters typesList={pokemonTypes} setFilters={setFilters} isChecked={false}/>
-        </>
+        <Wrapper gridArea={"search"}>
+            <SearchBar />
+            <WeightFilter setFilters={setFilters} />
+            <TypesFilters
+                typesList={pokemonTypes}
+                setFilters={setFilters}
+                isChecked={false}
+                ref={filterFocusReference}
+            />
+        </Wrapper>
     )
 }
 
