@@ -2,7 +2,7 @@ import React, { createContext, ReactNode, useRef } from "react";
 
 interface IFocusContext {
     cardFocusReference: React.RefObject<HTMLDivElement>
-    filterFocusReference: React.RefObject<HTMLElement>
+    filterFocusReference: React.RefObject<HTMLInputElement>
 }
 
 export const FocusContext = createContext({} as IFocusContext);
@@ -14,8 +14,8 @@ interface IFocusProviderProps {
 export const FocusProvider: React.FC<IFocusProviderProps> = ({
     children
 }) => {
-    const cardFocusReference = useRef(null);
-    const filterFocusReference = useRef(null);
+    const cardFocusReference = useRef<HTMLDivElement>(null);
+    const filterFocusReference = useRef<HTMLInputElement>(null);
 
     return (
         <FocusContext.Provider

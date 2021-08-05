@@ -9,16 +9,22 @@ interface ICheckBoxProps extends IFilterGenericProps {
     typesList: IType[],
 }
 
-const TypesFilters = React.forwardRef<HTMLDivElement, ICheckBoxProps>(({ setFilters, isChecked, typesList }, ref) => {
+const TypesFilters = React.forwardRef<HTMLInputElement, ICheckBoxProps>(({ setFilters, isChecked, typesList }, ref) => {
 
     return (
-        <FiltersContainer ref={ref} tabIndex={0}>
+        <FiltersContainer >
             <FilterHeader> Type:</FilterHeader>
             <StandardList>
-                {typesList.map((type: IType) => (
+                {typesList.map((type: IType, position: number) => (
                     <ListItem key={type.name}>
                         <FlexLabel htmlFor={type.name}>
-                            <Checkbox onClick={setFilters} type='checkbox' name={type.name} defaultChecked={isChecked} /> {type.name}
+                            <Checkbox
+                                onClick={setFilters}
+                                type='checkbox'
+                                name={type.name}
+                                defaultChecked={isChecked}
+                                ref={position === typesList.length - 1 ? ref : null}
+                            /> {type.name}
                         </FlexLabel>
                     </ListItem>))}
             </StandardList>

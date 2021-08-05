@@ -14,10 +14,10 @@ interface ICardProps {
     cardWidth?: string;
     onFavorite?: (pokemon: IPokemonFragment) => void;
     onHighlight?: (selectedPokemon: IPokemonFragment) => void;
-    onKeyboardInput: (event, pokemon: IPokemonFragment) => void;
+    onKeyboardInput?: (event, pokemon: IPokemonFragment) => void;
 }
 
-const Card = React.forwardRef<HTMLDivElement, ICardProps>(({ pokemon, displayButton, display, cardWidth, onFavorite, onHighlight, onKeyboardInput }, ref ) => {
+const Card = React.forwardRef<HTMLDivElement, ICardProps>(({ pokemon, displayButton, display, cardWidth, onFavorite, onHighlight, onKeyboardInput }, ref) => {
     const types = pokemon.types.map(({ type }) => type.name)
 
     const handleOnclick = (event) => {
@@ -26,43 +26,43 @@ const Card = React.forwardRef<HTMLDivElement, ICardProps>(({ pokemon, displayBut
     }
 
     const buttonDisplay = (
-        <Button 
+        <Button
             gridArea={"button"}
-            onClick={handleOnclick} 
-            state={{backgroundColor: pokemon.isFavorite? 'PokemonYellow' : 'White'}}
+            onClick={handleOnclick}
+            state={{ backgroundColor: pokemon.isFavorite ? 'PokemonYellow' : 'White' }}
             tabIndex={-1}
-            >{pokemon.isFavorite? 'Unfavorite' : 'Favorite'}
+        >{pokemon.isFavorite ? 'Unfavorite' : 'Favorite'}
         </Button>
     )
 
     const flexDisplay = (
-        <FlexContainer tabIndex={0} ref={ref} onKeyDown={(event, ) =>onKeyboardInput(event, pokemon)}>
-            <Sprite src={pokemon.sprites.front_default} alt={pokemon.name} width={"10rem"} gridArea={"sprite"}/>
-                <CardHeader gridArea={"header"}>
-                    {pokemon.name}
-                    <NumberBadge>#{pokemon.id}</NumberBadge>
-                </CardHeader>
-                <TypesBadge types={types}  gridArea={"types"}/>
-                {displayButton? buttonDisplay : null}
+        <FlexContainer tabIndex={0} ref={ref} onKeyDown={(event) => onKeyboardInput && onKeyboardInput(event, pokemon)}>
+            <Sprite src={pokemon.sprites.front_default} alt={pokemon.name} width={"10rem"} gridArea={"sprite"} />
+            <CardHeader gridArea={"header"}>
+                {pokemon.name}
+                <NumberBadge>#{pokemon.id}</NumberBadge>
+            </CardHeader>
+            <TypesBadge types={types} gridArea={"types"} />
+            {displayButton ? buttonDisplay : null}
         </FlexContainer>
     )
 
     const columnDisplay = (
         <>
-            <Sprite src={pokemon.sprites.front_default} alt={pokemon.name} width={"10rem"}/>
+            <Sprite src={pokemon.sprites.front_default} alt={pokemon.name} width={"10rem"} />
             <CardHeader>
                 {pokemon.name}
                 <NumberBadge>#{pokemon.id}</NumberBadge>
             </CardHeader>
-            <TypesBadge types={types}/>
-            {displayButton? buttonDisplay : null}
+            <TypesBadge types={types} />
+            {displayButton ? buttonDisplay : null}
         </>
-    )    
+    )
 
 
     return (Object.values(pokemon).length > 0 ?
-        <CardContainer width={cardWidth} onClick={() => onHighlight &&  onHighlight(pokemon)}>
-           {display === 'flex' ? flexDisplay : columnDisplay}
+        <CardContainer width={cardWidth} onClick={() => onHighlight && onHighlight(pokemon)}>
+            {display === 'flex' ? flexDisplay : columnDisplay}
         </CardContainer> : null
     )
 });

@@ -60,10 +60,7 @@ const Dashboard: React.FC = () => {
     }
 
     if (code === "KeyV") {
-      const { current } = filterFocusReference
-      const [, listNode]: HTMLElement[] = Array.from(current.children);
-      const listItems: Element[] = Array.from(listNode.children);
-      listItems[19].focus();
+      filterFocusReference.current.focus();
     }
   }
 
